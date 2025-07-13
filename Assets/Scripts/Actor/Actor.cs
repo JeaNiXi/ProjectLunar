@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Actor
 {
-    public class Actor : MonoBehaviour
+    public abstract class Actor : MonoBehaviour
     {
 
     }

@@ -1,3 +1,4 @@
+using Actor;
 using UnityEngine;
 
 namespace Managers
@@ -5,6 +6,7 @@ namespace Managers
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
+        [field: SerializeField] public MainCharacter CurrentCharacter { get; private set; }
 
         private void Awake()
         {
@@ -15,7 +17,7 @@ namespace Managers
                 Instance = this;
                 DontDestroyOnLoad(gameObject);
             }
-            Application.targetFrameRate = 60;
+            //Application.targetFrameRate = 60;
         }
     }
 }
