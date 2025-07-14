@@ -6,7 +6,6 @@ namespace Managers
     public class GameManager : MonoBehaviour
     {
         public static GameManager Instance { get; private set; }
-        [field: SerializeField] public MainCharacter CurrentCharacter { get; private set; }
 
         private void Awake()
         {
